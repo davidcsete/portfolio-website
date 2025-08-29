@@ -1,0 +1,57 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+/* Mobile-specific optimizations */
+@media (max-width: 768px) {
+  .hero {
+    min-height: calc(100vh - 4rem);
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+}
+
+/* Touch-friendly interactions */
+@media (hover: none) and (pointer: coarse) {
+  .btn:hover {
+    transform: none;
+  }
+  
+  .card:hover {
+    transform: none;
+  }
+}
+
+/* Improved focus states for keyboard navigation */
+.btn:focus-visible,
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid hsl(var(--p));
+  outline-offset: 2px;
+}
+
+/* Smooth animations */
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
