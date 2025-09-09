@@ -39,42 +39,46 @@ const Hero = () => {
   }
 
   return (
-    <section id="hero" className="hero min-h-screen bg-gradient-to-br from-primary/10 to-secondary/10 pt-16 px-4">
-      <div className="hero-content text-center w-full">
+    <section id="hero" className="hero min-h-screen bg-base-100 relative overflow-hidden pt-16 px-4">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(120,119,198,0.1),transparent_50%)]"></div>
+      
+      <div className="hero-content text-center w-full relative z-10">
         <div className="max-w-4xl mx-auto">
           {/* Name and Title */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight text-base-content">
             {personal.name}
           </h1>
           
           {/* Animated Typing Effect */}
-          <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-primary mb-6 h-8 md:h-12 flex items-center justify-center">
-            <span className="font-semibold text-center">
+          <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-6 h-8 md:h-12 flex items-center justify-center">
+            <span className="font-semibold text-center text-primary">
               {displayText}
-              <span className="animate-pulse">|</span>
+              <span className="animate-pulse text-accent">|</span>
             </span>
           </div>
 
           {/* Summary */}
-          <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8 max-w-2xl mx-auto leading-relaxed px-4">
+          <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8 max-w-2xl mx-auto leading-relaxed px-4 text-base-content/80">
             Highly proficient Full Stack Developer with expertise in Ruby on Rails, React, 
             and modern web technologies. Passionate about building scalable, high-performance 
             web applications with a focus on code quality and user experience.
           </p>
 
           {/* Location */}
-          <div className="flex items-center justify-center gap-2 mb-6 md:mb-8 text-sm md:text-base text-base-content/70">
-            <svg className="w-4 h-4 md:w-5 md:h-5" fill="currentColor" viewBox="0 0 20 20">
+          <div className="flex items-center justify-center gap-2 mb-6 md:mb-8 text-sm md:text-base text-base-content/60">
+            <svg className="w-4 h-4 md:w-5 md:h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
             </svg>
-            <span>{personal.location}</span>
+            <span className="text-base-content/70">{personal.location}</span>
           </div>
 
           {/* Call to Action Buttons */}
-          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center px-4">
+          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center px-4 mb-8 md:mb-12">
             <button 
               onClick={scrollToContact}
-              className="btn btn-primary btn-md md:btn-lg w-full sm:w-auto"
+              className="btn btn-primary btn-md md:btn-lg w-full sm:w-auto shadow-lg hover:shadow-xl transition-all duration-300"
             >
               Get In Touch
               <svg className="w-4 h-4 md:w-5 md:h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -84,7 +88,7 @@ const Hero = () => {
             
             <button 
               onClick={scrollToProjects}
-              className="btn btn-outline btn-md md:btn-lg w-full sm:w-auto"
+              className="btn btn-outline btn-primary btn-md md:btn-lg w-full sm:w-auto hover:bg-primary hover:text-primary-content transition-all duration-300"
             >
               View My Work
               <svg className="w-4 h-4 md:w-5 md:h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -94,7 +98,8 @@ const Hero = () => {
           </div>
 
           {/* Scroll Indicator */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <div className="flex flex-col items-center gap-2 animate-bounce">
+            <span className="text-xs text-base-content/50 font-medium">Scroll Down</span>
             <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
             </svg>
