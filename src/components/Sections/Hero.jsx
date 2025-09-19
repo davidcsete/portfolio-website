@@ -9,7 +9,7 @@ const Hero = () => {
   const phrases = [
     'Full Stack Developer',
     'Ruby on Rails Expert',
-    'React Developer',
+    'VueJs Developer',
     'AWS Certified Professional'
   ]
 

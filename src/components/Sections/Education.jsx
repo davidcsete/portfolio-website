@@ -10,7 +10,7 @@ const Education = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Education & Learning</h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-4"></div>
           <p className="text-lg text-base-content/70 max-w-2xl mx-auto">
-            My educational background, certifications, and continuous learning journey
+            My certifications and continuous learning journey
           </p>
         </div>
 
