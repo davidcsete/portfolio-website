@@ -10,7 +10,7 @@ const Hero = () => {
     'Full Stack Developer',
     'Ruby on Rails Expert',
     'VueJs Developer',
-    'AWS Certified Professional'
+    'AWS Certified Cloud Practitioner'
   ]
 
   useEffect(() => {
