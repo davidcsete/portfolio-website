@@ -42,8 +42,7 @@ const Education = () => {
                     </div>
                     <div className="mt-4 p-3 bg-orange-50 rounded-lg">
                       <p className="text-sm text-orange-800">
-                        Validates foundational knowledge of AWS Cloud services, security, architecture, 
-                        pricing, and support to build credible cloud expertise.
+                        {cert.description}
                       </p>
                     </div>
                   </div>

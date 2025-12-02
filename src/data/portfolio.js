@@ -161,7 +161,8 @@ export const portfolioData = {
       name: "AWS Certified Cloud Practitioner",
       issuer: "Amazon",
       date: "Current",
-      status: "Active"
+      status: "Active",
+      description: "Validates foundational knowledge of AWS Cloud services, security, architecture, pricing, and support to build credible cloud expertise."
     },
     {
       id: 2,
@@ -170,7 +171,8 @@ export const portfolioData = {
       date: "October 2024",
       duration: "21 hours",
       certificateId: "B/2020/007050",
-      status: "Completed"
+      status: "Completed",
+      description: "Comprehensive cybersecurity training covering cryptography fundamentals, network protocols, vulnerability identification, web application security (OWASP TOP 10), threat modeling, DevSecOps practices, incident response, and regulatory compliance. Gained hands-on experience with Kali Linux, security testing tools, and CI/CD pipeline security integration."
     }
   ],
   
