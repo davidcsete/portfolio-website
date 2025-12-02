@@ -162,6 +162,15 @@ export const portfolioData = {
       issuer: "Amazon",
       date: "Current",
       status: "Active"
+    },
+    {
+      id: 2,
+      name: "Cybersecurity - Navigation on the Cybersecurity Map",
+      issuer: "Barnabás Sándor",
+      date: "October 2024",
+      duration: "21 hours",
+      certificateId: "B/2020/007050",
+      status: "Completed"
     }
   ],
   
